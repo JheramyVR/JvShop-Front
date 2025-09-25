@@ -6,7 +6,7 @@ export const createUpdateProductAction = async (
     productLike: Partial<Product> & { files?: File[] }
 ): Promise<Product> => {
     await sleep(1500); //Opcional : simula demora real de backend
-    const { id, user, images = [], files = [], ...dataRest } = productLike; //files=[] significa si no viene files entonces un arreglo vacio asi se lee
+    const { id, images = [], files = [], ...dataRest } = productLike; //files=[] significa si no viene files entonces un arreglo vacio asi se lee
 
     const isCreating = id === "new";
 

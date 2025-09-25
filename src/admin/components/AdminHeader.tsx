@@ -3,7 +3,7 @@ import { Search, Bell, MessageSquare, Settings } from "lucide-react";
 import { useSearchParams } from "react-router";
 
 export const AdminHeader: React.FC = () => {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [, setSearchParams] = useSearchParams();
     const inputRef = useRef<HTMLInputElement>(null);
 
     const handleSearch = (event: React.KeyboardEvent<HTMLInputElement>) => {

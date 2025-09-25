@@ -4,7 +4,8 @@ import { ProductsGrid } from "@/shop/components/ProductsGrid";
 import { useProducts } from "@/shop/hooks/useProducts";
 
 export const HomePage = () => {
-    const { data, isLoading, isError } = useProducts();
+    // const { data, isLoading, isError } = useProducts();
+    const { data } = useProducts();
 
     // if (isLoading === true) {
     //     console.log("espera estoy cargando");
